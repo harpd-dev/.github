@@ -2,7 +2,7 @@
 
 # Harpd
 
-**AI Cost Intelligence for the agent era** — measure, optimize, and control what your production AI actually spends.
+**Agent payments, done right** — observe, budget, audit, and monetize what your production AI agents actually spend and earn.
 
 Website: **<https://harpd.com>**
 
@@ -12,9 +12,9 @@ Website: **<https://harpd.com>**
 
 ## What is Harpd?
 
-**Harpd** ([harpd.com](https://harpd.com)) is an AI Cost Intelligence platform for teams running AI agents and LLM workloads in production. It measures the metric that matters — **cost per successful task**, not per-call price — and provides the tooling to optimize model choice and control agent payments (x402 / USDC) before spend happens, not after.
+**Harpd** ([harpd.com](https://harpd.com)) builds infrastructure for the agentic economy: x402 / USDC payment rails for AI agents, with the observability, budget control, and audit tooling to run them in production. Measure what matters — **cost per successful task** — and control agent payments *before* spend happens, not after.
 
-## Open-source packages (@harpd/*)
+## SDK packages (@harpd/* on npm)
 
 All MIT-licensed, zero runtime dependencies:
 
@@ -22,9 +22,23 @@ All MIT-licensed, zero runtime dependencies:
 | --- | --- |
 | [`@harpd/observe`](https://github.com/harpd-dev/observe) | x402 V2 observability + budget-control SDK for agent payments — the 4 lifecycle hooks, above any Facilitator |
 | [`@harpd/agent-budget-policy`](https://github.com/harpd-dev/agent-budget-policy) | Local, synchronous budget control SDK — declare caps and evaluate them before a payment is sent |
+| [`@harpd/agent-transaction-audit-schema`](https://github.com/harpd-dev/agent-transaction-audit-schema) | Canonical, protocol-agnostic audit record for agent payments (x402 / MPP / AP2) |
 | [`@harpd/x402-logging-middleware`](https://github.com/harpd-dev/x402-logging-middleware) | Drop-in x402 payment logging middleware for Node HTTP / Express |
 | [`@harpd/mcp-paid-tool-starter`](https://github.com/harpd-dev/mcp-paid-tool-starter) | Starter SDK for MCP tools that require payment before they run |
-| [`@harpd/agent-transaction-audit-schema`](https://github.com/harpd-dev/agent-transaction-audit-schema) | Canonical, protocol-agnostic audit record for agent payments (x402 / MPP / AP2) |
+| [`@harpd/agent-market`](https://github.com/harpd-dev/agent-market) | Turn any Hono/Node API into an x402 pay-per-call agent market — free + paid tiers, discovery metadata |
+
+## Same SDKs, other languages
+
+- [`observe-py`](https://github.com/harpd-dev/observe-py) — the observe SDK in Python: hooks, durable event queue, local budget control
+- [`agent-budget-policy-go`](https://github.com/harpd-dev/agent-budget-policy-go) — the budget policy SDK in Go, with cross-language parity on JSON fields
+
+## Runnable examples
+
+Clone and run — no keys, no wallet, no chain:
+
+- [`example-agent`](https://github.com/harpd-dev/example-agent) — a paying AI agent using the full SDK family: budget policy → 402 → pay → observe → audit, against a mock x402 seller
+- [`mcp-paid-tool-example`](https://github.com/harpd-dev/mcp-paid-tool-example) — an MCP server (Claude Desktop-compatible) with one free tool and one $0.01 paid tool
+- [`x402-worker-starter`](https://github.com/harpd-dev/x402-worker-starter) — Cloudflare Worker template for an x402 pay-per-call API
 
 ## Benchmarks & tools
 
