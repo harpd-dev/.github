@@ -2,7 +2,7 @@
 
 # Harpd
 
-**Agent payments, done right** — observe, budget, audit, and monetize what your production AI agents actually spend and earn.
+**AI Cost Intelligence for the agent era** — measure, optimize, and control what your production AI actually spends and earns.
 
 Website: **<https://harpd.com>**
 
