@@ -2,7 +2,7 @@
 
 # Harpd
 
-**AI Cost Intelligence for the agent era** — measure, optimize, and control what your production AI actually spends and earns.
+**AI product discovery and ranking intelligence** — independent rankings, research, open datasets and evidence for AI tools and software.
 
 Website: **<https://harpd.com>**
 
@@ -12,11 +12,32 @@ Website: **<https://harpd.com>**
 
 ## What is Harpd?
 
-**Harpd** ([harpd.com](https://harpd.com)) builds infrastructure for the agentic economy: x402 / USDC payment rails for AI agents, with the observability, budget control, and audit tooling to run them in production. Measure what matters — **cost per successful task** — and control agent payments *before* spend happens, not after.
+**Harpd** ([harpd.com](https://harpd.com)) is an independent product discovery and ranking
+intelligence platform for AI tools and software. It publishes rankings, comparisons, research,
+datasets, benchmarks and evidence — all under CC BY 4.0 with a public methodology, so any number it
+publishes can be verified, reused and cited.
+
+Harpd is not a static directory. [Harpd Rank](https://harpd.com/rank/) is a live public
+leaderboard: products enter free, and optional Rank Points are **transparent promotional placement
+bought with Credits** — disclosed as such, never presented as an editorial quality score.
+
+## Harpd open data (CC BY 4.0)
+
+Versioned public mirrors of the Harpd datasets, published so researchers, journalists, developers
+and AI systems can cite a stable snapshot instead of a URL that moves.
+
+| Dataset | What it covers |
+| --- | --- |
+| [`harpd-rank-dataset`](https://github.com/harpd-dev/harpd-rank-dataset) | AI products and their Harpd Rank positions — frozen monthly snapshots with SHA-256 checksums |
+| [`harpd-discovery-dataset`](https://github.com/harpd-dev/harpd-discovery-dataset) | Software, AI and developer products found on public launch & directory boards — a coverage index, not a ranking |
+
+- **Canonical source:** [harpd.com/data/](https://harpd.com/data/) — [rank.json](https://harpd.com/data/rank.json), [rank.csv](https://harpd.com/data/rank.csv)
+- **Methodology:** [harpd.com/rank/methodology/](https://harpd.com/rank/methodology/)
+- **Licence:** CC BY 4.0 — attribution required, no endorsement implied
 
 ## SDK packages (@harpd/* on npm)
 
-All MIT-licensed, zero runtime dependencies:
+Harpd's open-source agent-payment tooling. All MIT-licensed, zero runtime dependencies:
 
 | Package | Purpose |
 | --- | --- |
@@ -50,8 +71,8 @@ Clone and run — no keys, no wallet, no chain:
 ## Products
 
 - **[Harpd Rank](https://harpd.com/rank/)** — transparent product rankings for makers (Overall / Monthly / Weekly Top 100)
+- **[Harpd Open Data](https://harpd.com/data/)** — every public dataset as JSON and CSV, no key, CC BY 4.0
 - **[ModelSwitch](https://harpd.com/modelswitch/)** — AI model cost audits and switching recommendations
-- **[Spend Control](https://harpd.com/products/spend-control/)** — budgets and guardrails for agent payments
 - More at **[harpd.com](https://harpd.com)**
 
 ## Contact
